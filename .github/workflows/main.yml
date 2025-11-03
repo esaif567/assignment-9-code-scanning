@@ -59,7 +59,7 @@ jobs:
           command: quickview,cves
           only-severities: critical,high
           sarif-file: scout-report.sarif
-          dockerhub-user: ${{ secrets.DOCKERHUB_USERNAME }}
+          dockerhub-user: ${{ DOCKERHUB_USERNAME }}
           dockerhub-password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Upload Artifact
